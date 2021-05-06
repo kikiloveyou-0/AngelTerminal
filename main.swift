@@ -1,5 +1,5 @@
 import Foundation
-
+import ShellOut
 
 let Title = """
     \u{001B}[0;34m
@@ -93,11 +93,38 @@ func Scene1(){
         ;let s5 = """
         \u{001B}[0;37m
         ┌───────────────────────────────────────────────┐
-        │ *Why don't you want to go there? Do i love you│
+        │ *Why don't you want to go there?Do i love you*│
         ├───────────────────────────────────────────────┤
         │ Type "pay" to go at the funerals              │
         └───────────────────────────────────────────────┘
+        
         """
+        
+        ;let s6 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You go to subway and open your music app*    │
+        ├───────────────────────────────────────────────┤
+        │ Type "music.run" to play a song               │
+        │ Type "del" to close the app                   │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s7 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *Playing Imaginary Folklore of Nujabes ▷ *    │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s8 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *...*                                         │
+        └───────────────────────────────────────────────┘
+        
+        """
+        
         
         
         let Image2 = """
@@ -178,7 +205,6 @@ ___________   _______________________________________^__
 ___________|||______________________________|______________/
            |||                                        /--------
 -----------'''---------------------------------------'
-
 """
         let Image4 = """
     \u{001B}[0;31m
@@ -207,7 +233,6 @@ UUUUUUUUUUUUUUUUUUUUUU| `.  .    )  )                    |  |__| |__| |_
 ----`. ___             ;---'---'      |  |_-|       |__     |       \\
 --(_)-'_ _\\___________/________|____/_'-(_)-----(_)-' _\\____|________\\__
 __________________________________________________________________________
-
 """
         let Image5 = """
     \u{001B}[0;30m
@@ -233,7 +258,6 @@ _________||_|_|_|_{| |}|||_|_||______________
                      |}|/
                      |}/
                      |/
-
 """
         let image6 = """
                                 _____  _____
@@ -259,7 +283,6 @@ _________||_|_|_|_{| |}|||_|_||______________
                            `\\%`@|     v      |@@%@%%
                          .%%%@@@|%    |    % @@@%%@%%%%
                     _.%%%%%%@@@@@@%%_/%\\_%@@%%@@@@@@@%%%%%%
-
 """
         
         
@@ -336,6 +359,47 @@ _________||_|_|_|_{| |}|||_|_||______________
                     RunLoop.current.run(until: Date()+0.0007)
                     print(char, terminator: "")
                 }
+                
+                for char in s6{
+                    RunLoop.current.run(until: Date()+0.003)
+                    print(char, terminator: "")
+                }
+                
+                
+                let musicChoice1 = "music.run"
+                let musicChoice2 = "del"
+                
+                let doPlay = ""
+                func play(){
+                    let output = try? shellOut(to: "afplay", arguments: ["-v 0.1 -t 30 /Users/cyril/Downloads/ImaginaryFolklore.mp3"])
+                }
+                
+                
+                while doPlay != musicChoice1 || doPlay != musicChoice2 {
+                    let doPlay = readLine()
+                    if(doPlay == "music.run"){
+                        for char in s7{
+                            RunLoop.current.run(until: Date()+0.003)
+                            print(char, terminator: "")
+                            
+                            
+                        }
+                        break
+                    }
+                    else if(doPlay == "del"){
+                        for char in s8{
+                            RunLoop.current.run(until: Date()+0.003)
+                            print(char, terminator: "")
+                        }
+                        
+                    }
+                    else{
+                        print("Please type a correct choise")
+                        
+                    }
+                }
+                play()
+                                
                 Next()
                 for char in Image4{
                     RunLoop.current.run(until: Date()+0.0007)
@@ -348,19 +412,13 @@ _________||_|_|_|_{| |}|||_|_||______________
                 }
                 Next()
                 
-                
-                
-                
-                
             }
             Funerals()
             
-                }
+        }
         Dialog()
         
-       
-        
-            }
+    }
     
-        }
+}
 Scene1()
