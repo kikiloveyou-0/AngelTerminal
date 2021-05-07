@@ -14,12 +14,16 @@ print(Title)
 let Menu = """
     \u{001B}[0;37m
 1 --> Start
-2 --> Options
-3 --> Quit
+2 --> Quit
 """
 print(Menu)
 
 var Answer = readLine()
+
+if(Answer == "2"){
+    print("Goodbye angel.")
+    exit(1)
+}
 
 
 func Scene1(){
@@ -124,6 +128,132 @@ func Scene1(){
         └───────────────────────────────────────────────┘
         
         """
+        ;let s9 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You are now facing the entry of the          │
+        │ the graveyard*                                │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s10 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You can here the religious music that are    │
+        │ usually played*                               │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s11 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *I love this music.*                          │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s12 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *Do you want to come in ? I do*               │
+        ├───────────────────────────────────────────────┤
+        │ Type "graveyard.in" to go in the graveyard    │
+        │ Type "del" to go back home                    │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s13 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You enter and see people near the grave*     │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s14 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *They seems sad. Did they knew her ?*         │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s15 = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You come closer to the grave.*               │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s16 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Angel  │ I...                                 │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s17 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Angel  │ I can't cry.                         │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        """
+        ;let s18 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Angel  │ Do i want to ? Do i need ?           │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s19 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Elliot │ Growth does not come from comfort    │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s20 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Elliot │ You have to get lost to be found.    │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s21 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Elliot │ And wounded to heal                  │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s22 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Elliot │ Be willing to experience chaos.      │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        
+        """
+        ;let s23 = """
+        \u{001B}[0;37m
+        ┌────────┬──────────────────────────────────────┐
+        │ Elliot │ So that you can create order         │
+        ├────────┘                                      │
+        └───────────────────────────────────────────────┘
+        """
+        
+        ;let end = """
+        \u{001B}[0;37m
+        ┌───────────────────────────────────────────────┐
+        │ *You come back home and fall asleep.*         │
+        └───────────────────────────────────────────────┘
+        
+        """
+        
+        
         
         
         
@@ -205,6 +335,7 @@ ___________   _______________________________________^__
 ___________|||______________________________|______________/
            |||                                        /--------
 -----------'''---------------------------------------'
+
 """
         let Image4 = """
     \u{001B}[0;31m
@@ -233,6 +364,7 @@ UUUUUUUUUUUUUUUUUUUUUU| `.  .    )  )                    |  |__| |__| |_
 ----`. ___             ;---'---'      |  |_-|       |__     |       \\
 --(_)-'_ _\\___________/________|____/_'-(_)-----(_)-' _\\____|________\\__
 __________________________________________________________________________
+
 """
         let Image5 = """
     \u{001B}[0;30m
@@ -259,7 +391,7 @@ _________||_|_|_|_{| |}|||_|_||______________
                      |}/
                      |/
 """
-        let image6 = """
+        let Image6 = """
                                 _____  _____
                                 <     `/     |
                                  >          (
@@ -313,7 +445,7 @@ _________||_|_|_|_{| |}|||_|_||______________
             
             //Pay part
             
-            func Funerals(){
+            func Going(){
                 for char in s3{
                     RunLoop.current.run(until: Date()+0.003)
                     print(char, terminator: "")
@@ -384,21 +516,22 @@ _________||_|_|_|_{| |}|||_|_||______________
                             
                             
                         }
+                        play()
                         break
                     }
                     else if(doPlay == "del"){
                         for char in s8{
                             RunLoop.current.run(until: Date()+0.003)
                             print(char, terminator: "")
+                            break
                         }
-                        
+                        break
                     }
                     else{
                         print("Please type a correct choise")
                         
                     }
                 }
-                play()
                                 
                 Next()
                 for char in Image4{
@@ -411,7 +544,113 @@ _________||_|_|_|_{| |}|||_|_||______________
                     print(char, terminator: "")
                 }
                 Next()
+                for char in s9{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s10{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s11{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                Next()
+                }
                 
+            }
+            
+            Going()
+            
+            
+            func Funerals(){
+                for char in s12{
+                    RunLoop.current.run(until: Date()+0.003)
+                    print(char, terminator: "")
+                }
+                
+                
+                
+                let goInChoice1 = "graveyard.in"
+                let goInChoice2 = "del"
+                
+                let doGo = ""
+                
+                
+                while doGo != goInChoice1 || doGo != goInChoice2 {
+                    let doGo = readLine()
+                    if(doGo == "graveyard.in"){
+                        for char in s13{
+                            RunLoop.current.run(until: Date()+0.003)
+                            print(char, terminator: "")
+                        }
+                        break
+                    }
+                    else if(doGo == "del"){
+                        for char in end{
+                            RunLoop.current.run(until: Date()+0.003)
+                            print(char, terminator: "")
+                            exit(1)
+                        }
+                        
+                    }
+                    else{
+                        print("Please type a correct choise")
+                        
+                    }
+                }
+                Next()
+                for char in s14{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s15{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s16{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s17{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s18{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s19{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s20{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s21{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s22{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
+                Next()
+                for char in s23{
+                    RunLoop.current.run(until: Date()+0.0007)
+                    print(char, terminator: "")
+                }
             }
             Funerals()
             
