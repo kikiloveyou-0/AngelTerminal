@@ -390,6 +390,7 @@ _________||_|_|_|_{| |}|||_|_||______________
                      |}|/
                      |}/
                      |/
+
 """
         let Image6 = """
                                 _____  _____
@@ -415,6 +416,7 @@ _________||_|_|_|_{| |}|||_|_||______________
                            `\\%`@|     v      |@@%@%%
                          .%%%@@@|%    |    % @@@%%@%%%%
                     _.%%%%%%@@@@@@%%_/%\\_%@@%%@@@@@@@%%%%%%
+
 """
         
         
@@ -503,7 +505,7 @@ _________||_|_|_|_{| |}|||_|_||______________
                 
                 let doPlay = ""
                 func play(){
-                    let output = try? shellOut(to: "afplay", arguments: ["-v 0.1 -t 30 /Users/cyril/Downloads/ImaginaryFolklore.mp3"])
+                    let output = try? shellOut(to: "afplay", arguments: ["-v 0.1 -t 30 /Users/cyril/Desktop/Programmation/TerminalGame/TerminalGame/Imaginary Folklore.mp3"])
                 }
                 
                 
@@ -545,20 +547,20 @@ _________||_|_|_|_{| |}|||_|_||______________
                 }
                 Next()
                 for char in s9{
-                    RunLoop.current.run(until: Date()+0.0007)
+                    RunLoop.current.run(until: Date()+0.0003)
                     print(char, terminator: "")
                 }
                 Next()
                 for char in s10{
-                    RunLoop.current.run(until: Date()+0.0007)
+                    RunLoop.current.run(until: Date()+0.0003)
                     print(char, terminator: "")
                 }
                 Next()
                 for char in s11{
-                    RunLoop.current.run(until: Date()+0.0007)
+                    RunLoop.current.run(until: Date()+0.0003)
                     print(char, terminator: "")
-                Next()
                 }
+                Next()
                 
             }
             
@@ -567,7 +569,7 @@ _________||_|_|_|_{| |}|||_|_||______________
             
             func Funerals(){
                 for char in s12{
-                    RunLoop.current.run(until: Date()+0.003)
+                    RunLoop.current.run(until: Date()+0.007)
                     print(char, terminator: "")
                 }
                 
@@ -583,14 +585,14 @@ _________||_|_|_|_{| |}|||_|_||______________
                     let doGo = readLine()
                     if(doGo == "graveyard.in"){
                         for char in s13{
-                            RunLoop.current.run(until: Date()+0.003)
+                            RunLoop.current.run(until: Date()+0.005)
                             print(char, terminator: "")
                         }
                         break
                     }
                     else if(doGo == "del"){
                         for char in end{
-                            RunLoop.current.run(until: Date()+0.003)
+                            RunLoop.current.run(until: Date()+0.005)
                             print(char, terminator: "")
                             exit(1)
                         }

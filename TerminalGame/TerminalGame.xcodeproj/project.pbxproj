@@ -36,6 +36,7 @@
 /* Begin PBXFileReference section */
 		F142D6FC26436A040093394A /* TerminalGame */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = TerminalGame; path = "../../../Library/Developer/Xcode/DerivedData/TerminalGame-fppflxanrgjhiwdvndteinoewnhz/Build/Products/Debug/TerminalGame"; sourceTree = "<group>"; };
 		F142D70026436BAF0093394A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F1AB9641264714FE004904E7 /* Imaginary Folklore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Imaginary Folklore.mp3"; sourceTree = "<group>"; };
 		F1E9E3BC26408223005078BE /* TerminalGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TerminalGame; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				F142D70026436BAF0093394A /* main.swift */,
+				F1AB9641264714FE004904E7 /* Imaginary Folklore.mp3 */,
 			);
 			path = TerminalGame;
 			sourceTree = "<group>";
