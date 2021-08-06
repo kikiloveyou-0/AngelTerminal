@@ -24,7 +24,7 @@ You will have to go trough your history by resolving problems based on my progra
 
 ## Installation
 
-### Using pip
+### From site
 
 Install Angel via the download button:
 
